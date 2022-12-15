@@ -1,0 +1,15 @@
+class Solution {
+public:
+    int busyStudent(vector<int>& st, vector<int>& et, int qt) {
+        int c=0;
+        for(int i=0;i<st.size();i++){
+         
+         if(qt >= st[i] && qt <= et[i]){
+             c++;
+         }
+              
+        }
+        return c;
+        
+    }
+};
